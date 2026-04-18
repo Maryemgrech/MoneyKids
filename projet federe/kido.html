@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>MoneyKids Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>💰 MoneyKids</h2>
+    <ul>
+        <li>Dashboard</li>
+        <li>Dépenses</li>
+        <li>Objectifs</li>
+        <li>Récompenses</li>
+    </ul>
+</div>
+
+<div class="main">
+
+    <div class="header">
+        <h1>Tableau de bord</h1>
+    </div>
+
+    <div class="cards">
+        <div class="card balance">
+            <h3>Solde</h3>
+            <p id="balance">100 TND</p>
+        </div>
+
+        <div class="card goal">
+            <h3>Objectif</h3>
+            <p>200 TND</p>
+        </div>
+
+        <div class="card reward">
+            <h3>Récompenses</h3>
+            <p>🎁 3 gagnées</p>
+        </div>
+    </div>
+
+    <div class="actions">
+        <h2>Ajouter une dépense</h2>
+        <input type="text" id="desc" placeholder="Description">
+        <input type="number" id="amount" placeholder="Montant">
+        <button onclick="addExpense()">Ajouter</button>
+    </div>
+
+    <div class="history">
+        <h2>Historique</h2>
+        <ul id="list"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html
